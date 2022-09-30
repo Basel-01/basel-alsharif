@@ -1,13 +1,20 @@
 /* Variables */
 :root {
   --primary-color: #23d997;
+  --dark-bg-color: #282828;
   --bg-color: #1b1b1b;
-  --nav-bg-color: #282828;
+  --text-color: #fff;
+  --light-text-color: #ccc;
   --white-color: #fff;
-  --light-color: #ccc;
-  --gray-color: #cccccc;
-  --section-padding: 40px 0;
+  --gray-color: #ccc;
   --main-transition: 0.4s ease;
+}
+
+/* Variables */
+.white-theme-variables {
+  --bg-color: #f7f7f7;
+  --text-color: #222;
+  --light-text-color: #444;
 }
 
 /* Reset */
@@ -67,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 .social a {
+  color: var(--white-color);
   font-size: 20px;
   margin: 0 6px;
   transition: 0.15s linear;
@@ -76,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.1);
 }
 .section-header {
+  color: var(--text-color);
   position: relative;
   width: fit-content;
   margin: 0 auto 80px;
@@ -91,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -20px;
   width: 98%;
   height: 1px;
-  background-color: var(--nav-bg-color);
+  background-color: var(--dark-bg-color);
 }
 .section-header::before {
   content: "";
@@ -125,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Navbar */
 #navbar {
   position: relative;
-  background-color: var(--nav-bg-color);
+  background-color: var(--dark-bg-color);
   padding-block: 20px;
   height: 80px;
 }
@@ -158,6 +167,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(8px) rotate(-45deg);
 }
 #navbar .nav-content .links a {
+  color: var(--white-color);
   font-size: 18px;
   margin: 0 10px;
   position: relative;
@@ -177,11 +187,31 @@ h1, h2, h3, h4, h5, h6 {
 #navbar .nav-content .links a.active::before {
   width: 100%;
 }
-@media (max-width: 768px) {
+#navbar .theme {
+  background-color: rgba(132, 139, 200, 0.18);
+  width: 80px;
+  margin: auto;
+  border-radius: 10px;
+}
+#navbar .theme span {
+  display: inline-block;
+  padding-block: 3px;
+  width: 40px;
+  height: 100%;
+  border-radius: 10px;
+  transition: var(--main-transition);
+  cursor: pointer;
+  color: #000;
+}
+#navbar .theme span.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+@media (max-width: 767px) {
   #navbar .nav-content {
     position: absolute;
     width: 100%;
-    background-color: var(--nav-bg-color);
+    background-color: var(--dark-bg-color);
     top: 82px;
     left: 110%;
     opacity: 0;
@@ -216,7 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Banner */
 #banner {
   height: calc(100vh - 80px);
-  color: var(--white-color);
+  color: var(--text-color);
 }
 #banner .banner-text span {
   font-weight: 700;
@@ -242,12 +272,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #banner .banner-text p {
-  color: var(--light-color);
+  color: var(--light-text-color);
   font-size: 20px;
   margin-bottom: 20px;
 }
 #banner .banner-text .contact {
-  background-color: var(--white-color);
+  background-color: var(--text-color);
   color: var(--bg-color);
   position: relative;
   z-index: 1;
@@ -270,10 +300,6 @@ h1, h2, h3, h4, h5, h6 {
 #banner .banner-text .contact:hover::before {
   width: 100%;
 }
-/* #banner .banner-text .contact span,
-#banner .banner-text .contact i {
-  padding: 0 4px;
-} */
 #banner .rocket-container {
   width: fit-content;
   margin: auto;
@@ -352,12 +378,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Skills */
 #skills {
-  color: var(--white-color);
   padding-top: 40px;
   padding-bottom: 16px;
+  color: var(--text-color);
 }
 #skills .skill {
-  background-color: var(--nav-bg-color);
+  background-color: var(--dark-bg-color);
   color: var(--white-color);
   width: 150px;
   height: 150px;
@@ -389,7 +415,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Projects */
 #projects {
-  color: var(--white-color);
+  color: var(--text-color);
   padding-block: 100px;
 }
 #projects .project {
@@ -400,6 +426,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  border: 1px solid #1b1b1b;
 }
 #projects .project a {
   width: 100%;
@@ -424,7 +451,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.8s ease-in-out;
 }
 #projects .project .project-desc p {
-  color: var(--light-color);
+  color: var(--gray-color);
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.5px;
@@ -456,10 +483,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer */
 footer {
-  background-color: var(--nav-bg-color);
-  padding-block: 20px;
+  background-color: var(--dark-bg-color);
+  padding-block: 25px;
 }
-footer i {
+footer .social i {
   font-size: 25px;
 }
 

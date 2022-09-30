@@ -35,6 +35,11 @@ export default function Skills() {
       icon: "fa-brands fa-sass",
       iconColor: "#cd6799",
       text: "Sass",
+    },
+    {
+      icon: "fa-brands fa-git-alt",
+      iconColor: "#f44d27",
+      text: "Git",
     }
   ]
   

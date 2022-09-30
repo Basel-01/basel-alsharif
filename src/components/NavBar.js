@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import {Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,16 +12,32 @@ export default function NavBar() {
     setIsMenuClicked(!isMenuClicked)
   }
 
+  let [darkMode, setDarkMode] = useState(true)
+
+  function handleTheme(theme) {
+    theme === "dark" ? setDarkMode(true) : setDarkMode(false)
+  }
+
+  useEffect(() => {
+    darkMode ? document.body.classList.remove("white-theme-variables") : document.body.classList.add("white-theme-variables")
+  }, [darkMode])
+
   return (
     <nav id='navbar'>
       <Container>
-        <Row className='align-items-center'>
-          <Col xs={6} sm={6} md={5} lg={6} className='logo'>
+        <Row className='align-items-center justify-content-between'>
+          <Col xs={5} sm={3} md={2} className='logo'>
             <h1>
               <a href='/'>باسل</a>
             </h1>
           </Col>
-          <Col xs={6} sm={6} className='d-block d-md-none'>
+          <Col xs={5} sm={7} md={3} lg={4}>
+            <div className='theme text-center'>
+              <span className={darkMode ? "active" : ""} onClick={() => handleTheme("dark")}><i className="fa-solid fa-moon"></i></span>
+              <span className={darkMode ? "" : "active"} onClick={() => handleTheme("light")}><i className="fa-solid fa-sun"></i></span>
+            </div>
+          </Col>
+          <Col xs={2} className='d-block d-md-none'>
             <div className={isMenuClicked ? 'menu me-auto close' : 'menu me-auto'} onClick={handleClick}>
               <span></span>
               <span></span>
