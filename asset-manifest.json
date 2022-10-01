@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.10d6d7dc.css",
-    "main.js": "/personal-portfolio/static/js/main.acde2425.js",
-    "static/media/kasper.png": "/personal-portfolio/static/media/kasper.20e997095d67ff4eba93.png",
-    "static/media/bondi.png": "/personal-portfolio/static/media/bondi.d6353a863cfb13bc37b9.png",
-    "static/media/edge-ledger.png": "/personal-portfolio/static/media/edge-ledger.0f089ace5970bfc66ca7.png",
-    "static/media/portfolio-template.png": "/personal-portfolio/static/media/portfolio-template.64074bb3a72c27817465.png",
-    "static/media/portfolio-template4.png": "/personal-portfolio/static/media/portfolio-template4.6684442a0686a2ed7043.png",
-    "static/media/gerko.png": "/personal-portfolio/static/media/gerko.7bcac795299f1edb7bd0.png",
-    "static/media/news-page.png": "/personal-portfolio/static/media/news-page.459097471cb656ebf6bb.png",
-    "static/media/portfolio-template3.png": "/personal-portfolio/static/media/portfolio-template3.2412571840b029b67b7b.png",
-    "static/media/portfolio-template2.png": "/personal-portfolio/static/media/portfolio-template2.2081967ca92198cac549.png",
-    "static/media/hotel.png": "/personal-portfolio/static/media/hotel.a911a364eb1336375c56.png",
-    "static/media/memory-game.png": "/personal-portfolio/static/media/memory-game.060d770666434ba8014e.png",
-    "static/media/tenzies.png": "/personal-portfolio/static/media/tenzies.47092f0142ba9b2b62f7.png",
-    "static/media/speed-test.png": "/personal-portfolio/static/media/speed-test.1badcb86a4d5a08b9234.png",
-    "static/media/rocket.svg": "/personal-portfolio/static/media/rocket.8078a0325839bcf164ea5a718dd07090.svg",
-    "index.html": "/personal-portfolio/index.html",
-    "main.10d6d7dc.css.map": "/personal-portfolio/static/css/main.10d6d7dc.css.map",
-    "main.acde2425.js.map": "/personal-portfolio/static/js/main.acde2425.js.map"
+    "main.css": "/baselAlsharif/static/css/main.10d6d7dc.css",
+    "main.js": "/baselAlsharif/static/js/main.5d3cbc08.js",
+    "static/media/kasper.png": "/baselAlsharif/static/media/kasper.20e997095d67ff4eba93.png",
+    "static/media/bondi.png": "/baselAlsharif/static/media/bondi.d6353a863cfb13bc37b9.png",
+    "static/media/edge-ledger.png": "/baselAlsharif/static/media/edge-ledger.0f089ace5970bfc66ca7.png",
+    "static/media/portfolio-template.png": "/baselAlsharif/static/media/portfolio-template.64074bb3a72c27817465.png",
+    "static/media/portfolio-template4.png": "/baselAlsharif/static/media/portfolio-template4.6684442a0686a2ed7043.png",
+    "static/media/gerko.png": "/baselAlsharif/static/media/gerko.7bcac795299f1edb7bd0.png",
+    "static/media/news-page.png": "/baselAlsharif/static/media/news-page.459097471cb656ebf6bb.png",
+    "static/media/portfolio-template3.png": "/baselAlsharif/static/media/portfolio-template3.2412571840b029b67b7b.png",
+    "static/media/portfolio-template2.png": "/baselAlsharif/static/media/portfolio-template2.2081967ca92198cac549.png",
+    "static/media/hotel.png": "/baselAlsharif/static/media/hotel.a911a364eb1336375c56.png",
+    "static/media/memory-game.png": "/baselAlsharif/static/media/memory-game.060d770666434ba8014e.png",
+    "static/media/tenzies.png": "/baselAlsharif/static/media/tenzies.47092f0142ba9b2b62f7.png",
+    "static/media/speed-test.png": "/baselAlsharif/static/media/speed-test.1badcb86a4d5a08b9234.png",
+    "static/media/rocket.svg": "/baselAlsharif/static/media/rocket.8078a0325839bcf164ea5a718dd07090.svg",
+    "index.html": "/baselAlsharif/index.html",
+    "main.10d6d7dc.css.map": "/baselAlsharif/static/css/main.10d6d7dc.css.map",
+    "main.5d3cbc08.js.map": "/baselAlsharif/static/js/main.5d3cbc08.js.map"
   },
   "entrypoints": [
     "static/css/main.10d6d7dc.css",
-    "static/js/main.acde2425.js"
+    "static/js/main.5d3cbc08.js"
   ]
 }
