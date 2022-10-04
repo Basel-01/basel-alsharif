@@ -8,14 +8,14 @@ import projectsData from './projectsData';
 export default function Projects() {
 
   let [showAll, setShowAll] = useState(false)
-  let [projectsSlice, setProjectsSlice] = useState(projectsData.slice(0,7))
+  let [projectsSlice, setProjectsSlice] = useState(projectsData.slice(0,8))
 
   function projectsLoad () {
     setShowAll(prevShowAll => !prevShowAll)
   }
 
   useEffect(() => {
-    showAll ? setProjectsSlice(projectsData) : setProjectsSlice(prevprojectsSlice => projectsData.slice(0,7))
+    showAll ? setProjectsSlice(projectsData) : setProjectsSlice(prevprojectsSlice => projectsData.slice(0,8))
   }, [showAll])
 
   return (

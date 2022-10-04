@@ -11,6 +11,7 @@ import edgeLedgerBg from '../imgs/projects-bg/edge-ledger.png'
 import bondiBg from '../imgs/projects-bg/bondi.png'
 import portfolioTemplate4Bg from '../imgs/projects-bg/portfolio-template4.png'
 import tenziesBg from '../imgs/projects-bg/tenzies.png'
+import toDoList from '../imgs/projects-bg/to-do-list.png'
 
 let projectsData = [
   {
@@ -45,6 +46,18 @@ let projectsData = [
       {
         icon: "fa-brands fa-square-js",
         iconColor: "#f7df1e",
+      }
+    ]
+  }
+  ,
+  {
+    projectUrl: "https://basel-01.github.io/to-do-list/",
+    projectBg: toDoList,
+    projectName: "To Do List",
+    techs: [
+      {
+        icon: "fa-brands fa-react",
+        iconColor: "#61dbfb",
       }
     ]
   }
