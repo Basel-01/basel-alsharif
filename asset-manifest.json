@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/basel-alsharif/static/css/main.10d6d7dc.css",
-    "main.js": "/basel-alsharif/static/js/main.f28784ce.js",
+    "main.js": "/basel-alsharif/static/js/main.22ff2e54.js",
     "static/media/kasper.png": "/basel-alsharif/static/media/kasper.20e997095d67ff4eba93.png",
     "static/media/bondi.png": "/basel-alsharif/static/media/bondi.d6353a863cfb13bc37b9.png",
     "static/media/edge-ledger.png": "/basel-alsharif/static/media/edge-ledger.0f089ace5970bfc66ca7.png",
@@ -14,14 +14,15 @@
     "static/media/hotel.png": "/basel-alsharif/static/media/hotel.a911a364eb1336375c56.png",
     "static/media/memory-game.png": "/basel-alsharif/static/media/memory-game.060d770666434ba8014e.png",
     "static/media/tenzies.png": "/basel-alsharif/static/media/tenzies.47092f0142ba9b2b62f7.png",
+    "static/media/to-do-list.png": "/basel-alsharif/static/media/to-do-list.1564884b04e5b9a9e351.png",
     "static/media/speed-test.png": "/basel-alsharif/static/media/speed-test.1badcb86a4d5a08b9234.png",
     "static/media/rocket.svg": "/basel-alsharif/static/media/rocket.8078a0325839bcf164ea5a718dd07090.svg",
     "index.html": "/basel-alsharif/index.html",
     "main.10d6d7dc.css.map": "/basel-alsharif/static/css/main.10d6d7dc.css.map",
-    "main.f28784ce.js.map": "/basel-alsharif/static/js/main.f28784ce.js.map"
+    "main.22ff2e54.js.map": "/basel-alsharif/static/js/main.22ff2e54.js.map"
   },
   "entrypoints": [
     "static/css/main.10d6d7dc.css",
-    "static/js/main.f28784ce.js"
+    "static/js/main.22ff2e54.js"
   ]
 }
