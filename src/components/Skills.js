@@ -55,10 +55,12 @@ export default function Skills() {
           {
             skillsData.map((skill, index) => {
               return (
-                <Col key={index} xs={12} sm={6} md={3} className="pb-4">
+                <Col key={index} xs={12} sm={6} md={3} className="pb-4 skill-con">
                   <div className='skill'>
+                    <div className='content'>
                       <i className={skill.icon} style={{color: skill.iconColor}}></i>
-                    <p>{skill.text}</p>
+                      <p>{skill.text}</p>
+                    </div>
                   </div>
                 </Col>
               )

@@ -36,6 +36,14 @@ export default function Banner() {
     return () => {clearInterval(ticker)}
   }, [text])
 
+  const handelHover = (event) => {
+    let btn = document.querySelector(".contact")
+    let x = event.pageX - btn.offsetLeft;
+    let y = event.pageY - btn.offsetTop;
+    btn.style.setProperty("--left-value", `${x}px`)
+    btn.style.setProperty("--top-value", `${y}px`)
+  }
+
   return (
     <main id="banner" className='d-flex justify-content-center align-items-center'>
       <Container>
@@ -44,7 +52,7 @@ export default function Banner() {
             <span>مرحبا ، انا</span>
             <h1>باسل الشريف <span>{text}</span></h1>
             <p>مطور واجهات امامية وعندي شغف كبير لتعلم كل مايخص تطوير تطبيقات الويب</p>
-            <a href="mailto:basel.lo0o87@gmail.com" className='button contact'><span className='px-1'>للتواصل</span><i className="fa-solid fa-envelope px-1"></i></a>
+            <a href="mailto:basel.lo0o87@gmail.com" className='button contact' onMouseEnter={handelHover}><span className='px-1'>للتواصل</span><i className="fa-solid fa-envelope px-1"></i></a>
           </Col>
           <Col md={4} lg={4} className="d-none d-md-block">
             <div className='rocket-container'>

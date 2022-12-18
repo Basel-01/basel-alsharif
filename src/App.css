@@ -281,24 +281,27 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--bg-color);
   position: relative;
   z-index: 1;
-  transition: var(--main-transition);
+  transition: 0.7s ease;
 }
 #banner .banner-text .contact::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  top: var(--top-value);
+  left: var(--left-value);
   width: 0;
-  height: 100%;
+  height: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
   background-color: var(--primary-color);
   z-index: -1;
-  transition: var(--main-transition);
+  transition: width 0.7s ease, height 0.7s ease;
 }
 #banner .banner-text .contact:hover {
   color: var(--white-color);
 }
 #banner .banner-text .contact:hover::before {
-  width: 100%;
+  width: 500px;
+  height: 500px;
 }
 #banner .rocket-container {
   width: fit-content;
@@ -390,12 +393,62 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   margin: auto;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: var(--main-transition);
+  position: relative;
+  overflow: hidden;
+}
+#skills .skill-con .skill::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 50px);
+  height: 60px;
+  background: linear-gradient(transparent, var(--primary-color), var(--primary-color), var(--primary-color), transparent);
+}
+#skills .skill-con:nth-child(even) .skill::before {
+  animation: lines-animate-even 4s linear infinite;
+}
+#skills .skill-con:nth-child(odd) .skill::before {
+  animation: lines-animate-odd 4s linear infinite;
+}
+@keyframes lines-animate-even {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes lines-animate-odd {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+#skills .skill::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background-color: var(--dark-bg-color);
+  border-radius: 50%;
+}
+#skills .skill:hover {
+  transform: scale(1.1);
+}
+#skills .skill .content {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  transition: var(--main-transition);
+  position: relative;
+  z-index: 1;
 }
 #skills .skill i {
   font-size: 50px;
@@ -405,9 +458,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 17px;
   user-select: none !important;
   transition: var(--main-transition);
-}
-#skills .skill:hover {
-  transform: scale(1.1);
 }
 #skills .skill:hover p {
   color: var(--primary-color);
@@ -473,6 +523,20 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   background-color: var(--primary-color);
   color: var(--white-color);
+}
+#projects .button:hover i {
+  animation: up-down 0.4s linear infinite;
+}
+@keyframes up-down {
+  0%, 100%, 50% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(2px);
+  }
+  75% {
+    transform: translateY(-2px);
+  }
 }
 @media (max-width: 576px) {
   #projects .project {
