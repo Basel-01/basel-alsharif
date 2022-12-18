@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/basel-alsharif/static/css/main.10d6d7dc.css",
-    "main.js": "/basel-alsharif/static/js/main.22ff2e54.js",
+    "main.css": "/basel-alsharif/static/css/main.454888a9.css",
+    "main.js": "/basel-alsharif/static/js/main.3079f453.js",
     "static/media/kasper.png": "/basel-alsharif/static/media/kasper.20e997095d67ff4eba93.png",
     "static/media/bondi.png": "/basel-alsharif/static/media/bondi.d6353a863cfb13bc37b9.png",
     "static/media/edge-ledger.png": "/basel-alsharif/static/media/edge-ledger.0f089ace5970bfc66ca7.png",
@@ -18,11 +18,11 @@
     "static/media/speed-test.png": "/basel-alsharif/static/media/speed-test.1badcb86a4d5a08b9234.png",
     "static/media/rocket.svg": "/basel-alsharif/static/media/rocket.8078a0325839bcf164ea5a718dd07090.svg",
     "index.html": "/basel-alsharif/index.html",
-    "main.10d6d7dc.css.map": "/basel-alsharif/static/css/main.10d6d7dc.css.map",
-    "main.22ff2e54.js.map": "/basel-alsharif/static/js/main.22ff2e54.js.map"
+    "main.454888a9.css.map": "/basel-alsharif/static/css/main.454888a9.css.map",
+    "main.3079f453.js.map": "/basel-alsharif/static/js/main.3079f453.js.map"
   },
   "entrypoints": [
-    "static/css/main.10d6d7dc.css",
-    "static/js/main.22ff2e54.js"
+    "static/css/main.454888a9.css",
+    "static/js/main.3079f453.js"
   ]
 }
